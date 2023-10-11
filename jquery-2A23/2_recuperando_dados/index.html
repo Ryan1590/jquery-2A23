@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução jquery</title>
+    <!--Chamando blibioteca jquery-->
+    <script type="text/javascript" src="code.jquery.com_jquery-3.7.1.min.js"></script>
+    <!--funcionalidade da pagina-->
+<link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+         /*   $(document).ready(function(){
+                alert("Pagina carregada, seja bem vindo!!");
+           });*/
+
+         /*  function pegarvalor(){
+
+            var valorform = $('#nome').val();
+            alert(valorform);
+
+           }*/
+
+           function pegarvalor(){
+            //valor que esta dentro da class
+            var valorformnome = document.querySelector("#nomeid").value;
+            var valorformFone = document.querySelector("#foneid").value;
+            var valorformEmail = document.querySelector("#emailid").value;
+            var valorformMensagem = document.querySelector("#textoid").value;
+
+            alert("Olá " 
+            + valorformnome + " " 
+            + valorformFone + " " 
+            + valorformEmail + " " 
+            + valorformMensagem);      
+
+
+
+alert('insert into nometabela(nomeid, foneid, emailid, textoid )value('
+                + valorformnome + ',' + valorformFone + ',' + valorformEmail + valorformMensagem + ')'
+            );
+
+        };
+
+
+    $(document).ready(function (){
+        $("a").click(function() {
+            alert("Você perdeu");
+        })
+    });
+
+    </script>
+</head>
+<body>
+
+    <form name="">
+
+        <h1>Entre em contato</h1>
+      
+        <input type="text" id="nomeid" placeholder="Ryan delicia" required="required" name="nome" />
+        <label for="nome">Nome</label>
+      
+        <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+        <label for="fone">Fone</label>
+      
+        <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+        <label for="email">Email</label>
+      
+        <textarea placeholder="Deixe sua opnião" id="textoid"></textarea>
+      
+        <input type="submit" class="enviar" onclick="pegarvalor();" value="Enviar" />
+
+   </form>
+
+
+   <a href="#">Não clique aqui</a>
+
+</body>
+</html>
