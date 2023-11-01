@@ -1,32 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução jquery</title>
-    <!--Chamando blibioteca jquery-->
-    <script type="text/javascript" src="code.jquery.com_jquery-3.7.1.min.js"></script>
-    <!--funcionalidade da pagina-->
-    <link rel="stylesheet" href="style.css"> 
-
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            $("#listaOrdenada").css("color", "red");
-
-        });
-        
-    </script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introdução jQuery</title>
+  <!--Chamando biblioteca jQuery-->
+  <script type="text/javascript" src="../3_seletores/code.jquery.com_jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="../3_seletores/style.css">
+  <!--Funcionalidade da página-->
+  <script type="text/javascript">
+      $(document).ready(function () {
+         //Exemplo prático de seletores
+          $(".listaOrdenadaUm li").css("color", "red");
+          $(".listaOrdenadaDois li").css("color", "green");
+          $("ul").css("color", "blue");
+          $("p").css("color", "blue");
+     });
+  </script>
 </head>
+  
 <body>
-
-  <ul id="listaOrdenada">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
+  <ul class="listaOrdenadaUm">
+      <li>Link 01</li>
+      <li>Link 02</li>
+      <li>Link 03</li>
   </ul>
 
+  <ul class="listaOrdenadaDois">
+      <li>Link 01</li>
+      <li>Link 02</li>
+      <li>Link 03</li>
+  </ul>
+  <p>Texto</p>
+
+  
+  
+
+
 </body>
+
 </html>

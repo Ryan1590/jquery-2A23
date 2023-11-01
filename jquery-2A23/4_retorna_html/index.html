@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução jQuery</title>
+    <!--Chamando biblioteca jQuery-->
+    <script type="text/javascript" src="../4_retorna_html/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="/4_retorna _html/style.css">
+    <!--Funcionalidade da página-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $(".content").html("'<img src='https://tse2.mm.bing.net/th?id=OIP.A_yiLN6IiPspu1HFPQUJYgHaE8&pid=Api&P=0&h=180'> ")
+
+            $("img").click(function(){
+                $(".heloo").html("<h1>clicou na foto!!!! </h1>")
+            })
+                
+            
+       });
+    </script>
+</head>
+
+<body>
+
+        <div class="content"></div>
+        <div class="heloo"></div>
+    
+</body>
+
+</html>
